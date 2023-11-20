@@ -6,7 +6,7 @@
 #    By: aleite-b <aleite-b@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/09 11:45:38 by aleite-b          #+#    #+#              #
-#    Updated: 2023/11/15 13:15:11 by aleite-b         ###   ########.fr        #
+#    Updated: 2023/11/20 13:49:14 by aleite-b         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ OBJECTS = $(SOURCES:.c=.o)
 
 HEADER = ft_printf.h
 
-.c.o: $(SRCS)
+.c.o: $(SOURCES)
 	$(CC) $(FLAGS) -I. -c $< -o $(<:.c=.o)
 
 $(NAME): $(OBJECTS) $(HEADER)
